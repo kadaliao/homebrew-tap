@@ -1,6 +1,6 @@
 cask "quickedit" do
-  version "0.2.0"
-  sha256 "8808807563124ac3d09942beff7f4cc2193940ebde644a0b132174e033898d37"
+  version "0.2.1"
+  sha256 "b53aaa0af5c17322dba7c0dc7c700e2cc9bc9ee54500a160fdf8c2bcbc6972f2"
 
   url "https://github.com/kadaliao/quickedit/releases/download/v#{version}/quickedit-#{version}-arm64.dmg"
   name "QuickEdit"
