@@ -1,6 +1,6 @@
 cask "kitfold" do
-  version "0.5.1"
-  sha256 "1a487c6d7c49fd35560cd654b16932ae060965decefad0109599bcaea01d7fec"
+  version "0.5.2"
+  sha256 "129adde0435b1cf647074babcf68003aaeb743316586793362209d6e374351eb"
 
   url "https://github.com/kadaliao/kitfold/releases/download/v#{version}/Kitfold-#{version}.dmg"
   name "Kitfold"
