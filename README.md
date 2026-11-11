@@ -49,5 +49,3 @@ scripts/bump.py --check-readme # 检查 README 有没有列全所有 Formula/Cas
 ```
 
 上游改了产物文件名时脚本会报错跳过、工作流标红，这时要手动改 `url`。新增 Formula/Cask 要同步加进上面的安装命令和表格，否则 `--check-readme` 会让工作流失败。
-
-tizi 和 tizi-desktop 由 Tizi 仓库的 `scripts/update-homebrew-tap.sh` 在发布时生成，smd 和 suck-my-disk 由 suck-my-disk 仓库的 `scripts/update-homebrew-tap.sh` 生成，改格式和内容要去那边改，这里手改会在下次发布时被覆盖。定时任务只动版本号和哈希，和这两个脚本不冲突。
