@@ -9,6 +9,8 @@ brew install --cask kadaliao/tap/tizi-desktop
 brew install --cask kadaliao/tap/suck-my-disk
 brew install --cask kadaliao/tap/kitfold
 brew install --cask kadaliao/tap/kaixinguo
+brew install --cask kadaliao/tap/islander
+brew install --cask kadaliao/tap/quickedit
 ```
 
 | 名称 | 类型 | 说明 |
@@ -21,8 +23,10 @@ brew install --cask kadaliao/tap/kaixinguo
 | [suck-my-disk](https://github.com/kadaliao/suck-my-disk) | Cask | SuckMyDisk：认得出项目、渲染帧、开发缓存、本地模型和应用的磁盘空间工具，告诉你哪些可以放心删（macOS 26 起，Apple Silicon 和 Intel 通用） |
 | [kitfold](https://github.com/kadaliao/kitfold) | Cask | Kitfold：统一管理 Claude Code、Codex、Gemini CLI、Cursor 等 70 多个 Coding Agent 的 Skills 和指令文件，同时装好 `kitfold` 命令行（macOS 15 起，Apple Silicon 和 Intel 通用） |
 | [kaixinguo](https://github.com/kadaliao/kaixinguo) | Cask | 开心果：无广告的红果短剧 Mac 客户端，GPU 直接绘制，安装包约 10 MB（macOS 12 起，Apple Silicon 和 Intel 通用） |
+| [islander](https://github.com/kadaliao/islander) | Cask | 岛民：把菜单栏图标藏进刘海，鼠标移到刘海上时在灵动岛里显示（macOS 14 起，Apple Silicon 和 Intel 通用） |
+| [quickedit](https://github.com/kadaliao/quickedit) | Cask | QuickEdit：极致快速的轻量编辑器，同时装好 `qe` 命令行（macOS 13 起，只有 Apple Silicon） |
 
-升级：`brew upgrade sessift tizi smd`。桌面 App（open-super-agent、tizi-desktop、suck-my-disk、kitfold、kaixinguo）自己会检查更新，`brew upgrade` 默认跳过它们，要用 brew 升级就加 `--greedy`。
+升级：`brew upgrade sessift tizi smd quickedit`。其余桌面 App（open-super-agent、tizi-desktop、suck-my-disk、kitfold、kaixinguo、islander）自己会检查更新，`brew upgrade` 默认跳过它们，要用 brew 升级就加 `--greedy`。
 
 卸载桌面 App 时连数据一起删：
 
@@ -31,5 +35,19 @@ brew install --cask kadaliao/tap/kaixinguo
 - `brew uninstall --cask --zap suck-my-disk`：会把 `~/Library/Application Support/SuckMyDisk`（磁盘索引、清理记录和恢复命令）和设置移到废纸篓。
 - `brew uninstall --cask --zap kitfold`：只删设置和缓存，留下 `~/.kitfold`。那里是技能库，各 Agent 的技能目录都链接到它，确定不用了再自己删。
 - `brew uninstall --cask --zap kaixinguo`：会把 `~/Library/Application Support/开心果`（观看记录和收藏）和封面缓存移到废纸篓。
+- `brew uninstall --cask --zap islander`：会删掉设置、手感参数和菜单栏布局（偏好设置和缓存）。
+- `brew uninstall --cask --zap quickedit`：会删掉 `~/Library/Application Support/QuickEdit`、偏好设置和窗口状态。
 
-tizi 和 tizi-desktop 由 Tizi 仓库的 `scripts/update-homebrew-tap.sh` 在发布时生成，smd 和 suck-my-disk 由 suck-my-disk 仓库的 `scripts/update-homebrew-tap.sh` 生成，都不要直接改。
+## 版本追踪
+
+`.github/workflows/bump.yml` 每 6 小时跑一次 `scripts/bump.py`：逐个查上游仓库 GitHub 上的最新 Release（跳过草稿和预发布），有新版就改 `version` / `url` 里的版本号，下载产物重算 `sha256`，提交成「<名称> <版本>」推到 main。也可以在 Actions 页手动触发，或者在本地跑：
+
+```sh
+scripts/bump.py --dry-run      # 只看哪些过期
+scripts/bump.py                # 改写文件（可只跟名称：scripts/bump.py kitfold）
+scripts/bump.py --check-readme # 检查 README 有没有列全所有 Formula/Cask
+```
+
+上游改了产物文件名时脚本会报错跳过、工作流标红，这时要手动改 `url`。新增 Formula/Cask 要同步加进上面的安装命令和表格，否则 `--check-readme` 会让工作流失败。
+
+tizi 和 tizi-desktop 由 Tizi 仓库的 `scripts/update-homebrew-tap.sh` 在发布时生成，smd 和 suck-my-disk 由 suck-my-disk 仓库的 `scripts/update-homebrew-tap.sh` 生成，改格式和内容要去那边改，这里手改会在下次发布时被覆盖。定时任务只动版本号和哈希，和这两个脚本不冲突。

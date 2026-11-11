@@ -1,0 +1,47 @@
+name: bump
+
+on:
+  schedule:
+    - cron: "17 */6 * * *"
+  workflow_dispatch:
+  # 上游发布后可以立刻触发：gh api repos/kadaliao/homebrew-tap/dispatches -f event_type=bump
+  repository_dispatch:
+    types: [bump]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: bump
+  cancel-in-progress: false
+
+jobs:
+  bump:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: README 是否列全
+        run: python3 scripts/bump.py --check-readme
+
+      - name: 追最新 Release
+        id: bump
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 scripts/bump.py
+
+      - name: 提交
+        # bump.py 有个别软件失败时退出码非 0，已成功的仍然提交。
+        if: always() && steps.bump.outputs.message != ''
+        env:
+          MESSAGE: ${{ steps.bump.outputs.message }}
+          BOT: github-actions[bot]
+          BOT_ID: "41898282"
+        run: |
+          git config user.name "$BOT"
+          git config user.email "$BOT_ID+$BOT@users.noreply.github.com"
+          git add Formula Casks
+          git commit -m "$MESSAGE"
+          # 上游发布脚本可能同时推过来，rebase 一下再推。
+          git pull --rebase --quiet
+          git push
