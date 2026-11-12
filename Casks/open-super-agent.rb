@@ -1,9 +1,9 @@
 cask "open-super-agent" do
   arch arm: "arm64", intel: "x64"
 
-  version "0.17.0"
-  sha256 arm:   "8029a49a6a5d463260c8763628167ae6ad6e0d86d2748c961ee31e20b06f7cac",
-         intel: "e4d76da5bba0b4153f53b7a9ad0abd807afbec42abdbf64d3d2bd457ea633e90"
+  version "0.18.0"
+  sha256 arm:   "c6d3b38b0acda5a74012724dbad01a6e39f8e21dda91d1ba6d507d4950b7fbfe",
+         intel: "65b6937cb681c899c83745ee550dc5598f463b2ebae84ece6258fd1098a5012a"
 
   url "https://github.com/kadaliao/open-super-agent/releases/download/v#{version}/OpenSuperAgent-#{version}-#{arch}.dmg"
   name "Open Super Agent"

@@ -1,8 +1,8 @@
 class Smd < Formula
   desc "SuckMyDisk 的命令行：看空间被谁占了、按预选清理，可输出 JSON"
   homepage "https://github.com/kadaliao/suck-my-disk"
-  url "https://github.com/kadaliao/suck-my-disk/releases/download/v0.6.1/smd-0.6.1-macos.zip"
-  sha256 "70ca1f7c7413293bb59e09dc157f844b114c1d1a5b01627392bf39abc2988ddc"
+  url "https://github.com/kadaliao/suck-my-disk/releases/download/v0.6.2/smd-0.6.2-macos.zip"
+  sha256 "e384104db49efbaa25592187abe0d26f3a1e1ddcfec4104a523132d2ac696bd0"
   license "MIT"
 
   livecheck do
