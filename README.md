@@ -11,6 +11,7 @@ brew install --cask kadaliao/tap/kitfold
 brew install --cask kadaliao/tap/kaixinguo
 brew install --cask kadaliao/tap/islander
 brew install --cask kadaliao/tap/quickedit
+brew install --cask kadaliao/tap/notchfax
 ```
 
 | 名称 | 类型 | 说明 |
@@ -25,8 +26,9 @@ brew install --cask kadaliao/tap/quickedit
 | [kaixinguo](https://github.com/kadaliao/kaixinguo) | Cask | 开心果：无广告的红果短剧 Mac 客户端，GPU 直接绘制，安装包约 10 MB（macOS 12 起，Apple Silicon 和 Intel 通用） |
 | [islander](https://github.com/kadaliao/islander) | Cask | 岛民：把菜单栏图标藏进刘海，鼠标移到刘海上时在灵动岛里显示（macOS 14 起，Apple Silicon 和 Intel 通用） |
 | [quickedit](https://github.com/kadaliao/quickedit) | Cask | QuickEdit：极致快速的轻量编辑器，同时装好 `qe` 命令行（macOS 13 起，只有 Apple Silicon） |
+| [notchfax](https://github.com/kadaliao/notchfax) | Cask | Notchfax：把刘海当出纸口的小机器，印那年今日的照片、拍大头贴、给随机的陌生人发匿名传真（macOS 14 起，Apple Silicon 和 Intel 通用） |
 
-升级：`brew upgrade sessift tizi smd quickedit`。其余桌面 App（open-super-agent、tizi-desktop、suck-my-disk、kitfold、kaixinguo、islander）自己会检查更新，`brew upgrade` 默认跳过它们，要用 brew 升级就加 `--greedy`。
+升级：`brew upgrade sessift tizi smd quickedit notchfax`。其余桌面 App（open-super-agent、tizi-desktop、suck-my-disk、kitfold、kaixinguo、islander）自己会检查更新，`brew upgrade` 默认跳过它们，要用 brew 升级就加 `--greedy`。
 
 卸载桌面 App 时连数据一起删：
 
@@ -37,6 +39,7 @@ brew install --cask kadaliao/tap/quickedit
 - `brew uninstall --cask --zap kaixinguo`：会把 `~/Library/Application Support/开心果`（观看记录和收藏）和封面缓存移到废纸篓。
 - `brew uninstall --cask --zap islander`：会删掉设置、手感参数和菜单栏布局（偏好设置和缓存）。
 - `brew uninstall --cask --zap quickedit`：会删掉 `~/Library/Application Support/QuickEdit`、偏好设置和窗口状态。
+- `brew uninstall --cask --zap notchfax`：会删掉 `~/Library/Application Support/Notchfax`（传真身份、线路和收到的传真）和设置。再装回来就是一个新的匿名身份。
 
 ## 版本追踪
 
