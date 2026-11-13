@@ -12,6 +12,7 @@ brew install --cask kadaliao/tap/kaixinguo
 brew install --cask kadaliao/tap/islander
 brew install --cask kadaliao/tap/quickedit
 brew install --cask kadaliao/tap/notchfax
+brew install --cask kadaliao/tap/docket
 ```
 
 | 名称 | 类型 | 说明 |
@@ -27,8 +28,9 @@ brew install --cask kadaliao/tap/notchfax
 | [islander](https://github.com/kadaliao/islander) | Cask | 岛民：把菜单栏图标藏进刘海，鼠标移到刘海上时在灵动岛里显示（macOS 14 起，Apple Silicon 和 Intel 通用） |
 | [quickedit](https://github.com/kadaliao/quickedit) | Cask | QuickEdit：极致快速的轻量编辑器，同时装好 `qe` 命令行（macOS 13 起，只有 Apple Silicon） |
 | [notchfax](https://github.com/kadaliao/notchfax) | Cask | Notchfax：把刘海当出纸口的小机器，印那年今日的照片、拍大头贴、给随机的陌生人发匿名传真，带 `notchfax` 命令从终端打印（macOS 14 起，Apple Silicon 和 Intel 通用） |
+| [docket](https://github.com/kadaliao/ai-todolist) | Cask | Docket：清爽、快速、带 AI 的待办清单，一句话添加任务，⌘⇧Space 随时快速录入，可自托管多设备同步（macOS 12 起，只有 Apple Silicon） |
 
-升级：`brew upgrade sessift tizi smd quickedit notchfax`。其余桌面 App（open-super-agent、tizi-desktop、suck-my-disk、kitfold、kaixinguo、islander）自己会检查更新，`brew upgrade` 默认跳过它们，要用 brew 升级就加 `--greedy`。
+升级：`brew upgrade sessift tizi smd quickedit notchfax docket`。其余桌面 App（open-super-agent、tizi-desktop、suck-my-disk、kitfold、kaixinguo、islander）自己会检查更新，`brew upgrade` 默认跳过它们，要用 brew 升级就加 `--greedy`。
 
 卸载桌面 App 时连数据一起删：
 
@@ -52,3 +54,4 @@ scripts/bump.py --check-readme # 检查 README 有没有列全所有 Formula/Cas
 ```
 
 上游改了产物文件名时脚本会报错跳过、工作流标红，这时要手动改 `url`。新增 Formula/Cask 要同步加进上面的安装命令和表格，否则 `--check-readme` 会让工作流失败。
+- `brew uninstall --cask --zap docket`：会删掉本机的任务数据和设置（WebKit 存储、偏好设置和缓存）；连过同步服务器的话，服务器上的数据不受影响。
