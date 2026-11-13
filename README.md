@@ -26,7 +26,7 @@ brew install --cask kadaliao/tap/notchfax
 | [kaixinguo](https://github.com/kadaliao/kaixinguo) | Cask | 开心果：无广告的红果短剧 Mac 客户端，GPU 直接绘制，安装包约 10 MB（macOS 12 起，Apple Silicon 和 Intel 通用） |
 | [islander](https://github.com/kadaliao/islander) | Cask | 岛民：把菜单栏图标藏进刘海，鼠标移到刘海上时在灵动岛里显示（macOS 14 起，Apple Silicon 和 Intel 通用） |
 | [quickedit](https://github.com/kadaliao/quickedit) | Cask | QuickEdit：极致快速的轻量编辑器，同时装好 `qe` 命令行（macOS 13 起，只有 Apple Silicon） |
-| [notchfax](https://github.com/kadaliao/notchfax) | Cask | Notchfax：把刘海当出纸口的小机器，印那年今日的照片、拍大头贴、给随机的陌生人发匿名传真（macOS 14 起，Apple Silicon 和 Intel 通用） |
+| [notchfax](https://github.com/kadaliao/notchfax) | Cask | Notchfax：把刘海当出纸口的小机器，印那年今日的照片、拍大头贴、给随机的陌生人发匿名传真，带 `notchfax` 命令从终端打印（macOS 14 起，Apple Silicon 和 Intel 通用） |
 
 升级：`brew upgrade sessift tizi smd quickedit notchfax`。其余桌面 App（open-super-agent、tizi-desktop、suck-my-disk、kitfold、kaixinguo、islander）自己会检查更新，`brew upgrade` 默认跳过它们，要用 brew 升级就加 `--greedy`。
 

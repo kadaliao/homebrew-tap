@@ -1,6 +1,6 @@
 cask "notchfax" do
-  version "0.1.0"
-  sha256 "599131dc54b19ac9d83cfb643ff04e20dc85f9a41957fb12ea7deda890089141"
+  version "0.2.0"
+  sha256 "260e721ebd72dd4bd38fdcdc05aecebb944665aac63f6a034dd770b55af3fd64"
 
   url "https://github.com/kadaliao/notchfax/releases/download/v#{version}/Notchfax-#{version}.dmg"
   name "Notchfax"
@@ -15,6 +15,8 @@ cask "notchfax" do
   depends_on macos: :sonoma
 
   app "Notchfax.app"
+  # 命令行就是 App 自己的可执行文件，按名字 notchfax 调用时走命令行。
+  binary "#{appdir}/Notchfax.app/Contents/MacOS/Notchfax", target: "notchfax"
 
   uninstall quit: "com.kadaliao.notchfax"
 
