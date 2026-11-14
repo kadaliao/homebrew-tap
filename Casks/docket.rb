@@ -1,6 +1,6 @@
 cask "docket" do
-  version "1.1.0"
-  sha256 "2ab7b881d439aeb1d94363a9642db0b5870727d460bdd2bd8e09c85e4c37b42b"
+  version "1.2.0"
+  sha256 "bc44cfc44e6c371742aebe77a5514399e16b8d9ef21fa80e6a951b3add6fdedc"
 
   url "https://github.com/kadaliao/ai-todolist/releases/download/v#{version}/Docket-#{version}-macOS-arm64.dmg"
   name "Docket"
