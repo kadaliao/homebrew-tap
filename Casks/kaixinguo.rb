@@ -1,6 +1,6 @@
 cask "kaixinguo" do
-  version "0.5.1"
-  sha256 "2c1863ed5d0bbeaa6e5542ace2df88aef14e664bd6215585984055edb856fd0c"
+  version "0.6.0"
+  sha256 "e09f523a78d7ca0b66a0f6b29fbbe6e3f717a7056b9595a2ba39d80f95be1b5b"
 
   url "https://github.com/kadaliao/kaixinguo/releases/download/v#{version}/kai-xin-guo-#{version}.dmg"
   name "开心果"
