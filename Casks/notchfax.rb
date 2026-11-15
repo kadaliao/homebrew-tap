@@ -12,6 +12,8 @@ cask "notchfax" do
     strategy :github_latest
   end
 
+  # 0.3.0 起 App 会自己下载并换上新版本，brew upgrade 默认跳过它（--greedy 仍会升级）。
+  auto_updates true
   depends_on macos: :sonoma
 
   app "Notchfax.app"
