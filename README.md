@@ -4,6 +4,7 @@
 brew install kadaliao/tap/sessift
 brew install kadaliao/tap/tizi
 brew install kadaliao/tap/smd
+brew install kadaliao/tap/ocu
 brew install --cask kadaliao/tap/open-super-agent
 brew install --cask kadaliao/tap/tizi-desktop
 brew install --cask kadaliao/tap/suck-my-disk
@@ -20,6 +21,7 @@ brew install --cask kadaliao/tap/docket
 | [sessift](https://github.com/kadaliao/sessift) | Formula | 搜索、浏览、恢复多台机器上的 AI 编程助手会话（目前只有 macOS Apple Silicon 的预编译版本） |
 | [tizi](https://github.com/kadaliao/Tizi) | Formula | 填好机场订阅就能用的代理工具：国内直连、海外走代理。这里装的是终端版和命令行（macOS；Linux 只有 x86_64，支持 Ubuntu 22.04 / 24.04） |
 | [smd](https://github.com/kadaliao/suck-my-disk) | Formula | SuckMyDisk 的命令行：看空间被谁占了、按预选清理，可输出 JSON 给脚本和编程助手（macOS 26 起，Apple Silicon 和 Intel 通用） |
+| [ocu](https://github.com/kadaliao/open-computer-use) | Formula | open-computer-use：让 AI agent 通过辅助功能树操作 macOS 应用，带命令行、MCP 服务和内置 agent（只有 Apple Silicon） |
 | [open-super-agent](https://github.com/kadaliao/open-super-agent) | Cask | 可以自己部署的常驻 AI 队友，这里装的是 macOS 桌面 App（Apple Silicon 和 Intel 都有，macOS 12 起） |
 | [tizi-desktop](https://github.com/kadaliao/Tizi) | Cask | Tizi 的 macOS 桌面版，自带终端版（Apple Silicon 和 Intel 都有，macOS 13 起） |
 | [suck-my-disk](https://github.com/kadaliao/suck-my-disk) | Cask | SuckMyDisk：认得出项目、渲染帧、开发缓存、本地模型和应用的磁盘空间工具，告诉你哪些可以放心删（macOS 26 起，Apple Silicon 和 Intel 通用） |
@@ -30,7 +32,7 @@ brew install --cask kadaliao/tap/docket
 | [notchfax](https://github.com/kadaliao/notchfax) | Cask | Notchfax：把刘海当出纸口的小机器，印那年今日的照片、拍大头贴、给随机的陌生人发匿名传真，带 `notchfax` 命令从终端打印（macOS 14 起，Apple Silicon 和 Intel 通用） |
 | [docket](https://github.com/kadaliao/ai-todolist) | Cask | Docket：清爽、快速、带 AI 的待办清单，一句话添加任务，⌘⇧Space 随时快速录入，可自托管多设备同步（macOS 12 起，只有 Apple Silicon） |
 
-升级：`brew upgrade sessift tizi smd quickedit notchfax docket`。其余桌面 App（open-super-agent、tizi-desktop、suck-my-disk、kitfold、kaixinguo、islander）自己会检查更新，`brew upgrade` 默认跳过它们，要用 brew 升级就加 `--greedy`。
+升级：`brew upgrade sessift tizi smd ocu quickedit notchfax docket`。其余桌面 App（open-super-agent、tizi-desktop、suck-my-disk、kitfold、kaixinguo、islander）自己会检查更新，`brew upgrade` 默认跳过它们，要用 brew 升级就加 `--greedy`。
 
 卸载桌面 App 时连数据一起删：
 
