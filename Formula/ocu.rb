@@ -1,8 +1,8 @@
 class Ocu < Formula
   desc "让 AI agent 通过辅助功能树操作 macOS 应用：命令行、MCP 服务和内置 agent"
   homepage "https://github.com/kadaliao/open-computer-use"
-  url "https://github.com/kadaliao/open-computer-use/releases/download/v0.7.0/ocu-v0.7.0-macos-arm64.tar.gz"
-  sha256 "d607794e9f81e8feb40a755462f04bbf9b8c7d9e091032b01058e467b821eab1"
+  url "https://github.com/kadaliao/open-computer-use/releases/download/v0.7.1/ocu-v0.7.1-macos-arm64.tar.gz"
+  sha256 "a5460a225273a791558251d7b0149d73e02a1499885968f9e9465e7e590d3305"
   license "MIT"
 
   depends_on arch: :arm64
