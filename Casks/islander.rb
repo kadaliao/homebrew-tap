@@ -1,6 +1,6 @@
 cask "islander" do
-  version "0.2.7"
-  sha256 "ff716005445fbb5085a4f1ccc7602044dbb8165126129306a2070b2bf5891926"
+  version "0.2.8"
+  sha256 "cf44183e7f531cf2b0e072ad2ba0710c8c6c565a9f0ce40e7adffedd0aa7d7ad"
 
   url "https://github.com/kadaliao/islander/releases/download/v#{version}/Islander-#{version}.zip"
   name "Islander"
