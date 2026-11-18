@@ -2,9 +2,9 @@ class Tizi < Formula
   desc "填好机场订阅就能用：国内直连、海外走代理（基于 Mihomo）"
   homepage "https://github.com/kadaliao/Tizi"
   # 默认是 Linux 的包，Mac 在 on_macos 里按芯片换成自己的。
-  url "https://github.com/kadaliao/Tizi/releases/download/v1.2.0/tizi-linux-amd64.tar.gz"
-  version "1.2.0"
-  sha256 "77f82683941ab42d335f4f2d175247874d763ace3d13824998abca3c82fe5322"
+  url "https://github.com/kadaliao/Tizi/releases/download/v1.2.1/tizi-linux-amd64.tar.gz"
+  version "1.2.1"
+  sha256 "1531850143b33ef5f3969f09a2c9ebb685900d8ed0a1aad998f1a52201fd3450"
   license "MIT"
 
   livecheck do
@@ -15,11 +15,11 @@ class Tizi < Formula
   on_macos do
     on_arm do
       url "https://github.com/kadaliao/Tizi/releases/download/v#{version}/tizi-darwin-arm64.tar.gz"
-      sha256 "8ac5e7c40ecf79c20422d32fafb5956adc8ccf8e01a1598763e53db1bf23c5c6"
+      sha256 "0d7f6c19203c84dbf91aeee16b89efba59d6cee81e43646c553c6b2c54eb37e6"
     end
     on_intel do
       url "https://github.com/kadaliao/Tizi/releases/download/v#{version}/tizi-darwin-amd64.tar.gz"
-      sha256 "34597b3299fd256146cbc20350527c910a036588470515e982aa96ee5e789954"
+      sha256 "431f7d9414445a1a6df86d622f48ae1c6170c0eefe5d66dc69cd3f3982ff549e"
     end
   end
 

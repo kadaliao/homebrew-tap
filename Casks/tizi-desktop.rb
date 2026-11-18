@@ -1,6 +1,6 @@
 cask "tizi-desktop" do
-  version "1.2.0"
-  sha256 "7140e7af924743dacd7793c933274abe7e048bcadd22ced7a6e9e94b549557ba"
+  version "1.2.1"
+  sha256 "8888757de26d6e33e07ef57f3758e187c419a3dc33ddcc7973f62cb7043e31e7"
 
   url "https://github.com/kadaliao/Tizi/releases/download/v#{version}/TiziDesktop-macos.zip"
   name "Tizi"
