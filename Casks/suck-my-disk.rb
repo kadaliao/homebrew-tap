@@ -17,6 +17,8 @@ cask "suck-my-disk" do
   depends_on macos: :tahoe
 
   app "SuckMyDisk.app"
+  # 命令行 smd 在 App 里面，跟着 App 一起更新。
+  binary "#{appdir}/SuckMyDisk.app/Contents/Helpers/smd"
 
   uninstall quit: "com.kadaliao.SuckMyDisk"
 

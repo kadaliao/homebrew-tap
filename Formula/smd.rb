@@ -18,7 +18,9 @@ class Smd < Formula
 
   def caveats
     <<~EOS
-      smd 和 SuckMyDisk App 共用索引和清理记录。想要 App：
+      smd 和 SuckMyDisk App 共用索引和清理记录。
+      App 里自带同一个 smd，并且跟着 App 一起更新；想要 App 的话，换成它：
+        brew uninstall smd
         brew install --cask kadaliao/tap/suck-my-disk
     EOS
   end

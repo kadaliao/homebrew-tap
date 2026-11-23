@@ -21,12 +21,12 @@ brew install --cask kadaliao/tap/docket
 |---|---|---|
 | [sessift](https://github.com/kadaliao/sessift) | Formula | 搜索、浏览、恢复多台机器上的 AI 编程助手会话（目前只有 macOS Apple Silicon 的预编译版本） |
 | [tizi](https://github.com/kadaliao/Tizi) | Formula | 填好机场订阅就能用的代理工具：国内直连、海外走代理。这里装的是终端版和命令行（macOS；Linux 只有 x86_64，支持 Ubuntu 22.04 / 24.04） |
-| [smd](https://github.com/kadaliao/suck-my-disk) | Formula | SuckMyDisk 的命令行：看空间被谁占了、按预选清理，可输出 JSON 给脚本和编程助手（macOS 26 起，Apple Silicon 和 Intel 通用） |
+| [smd](https://github.com/kadaliao/suck-my-disk) | Formula | SuckMyDisk 的命令行（不装 App 时用；App 里已经自带）：看空间被谁占了、按预选清理，可输出 JSON 给脚本和编程助手（macOS 26 起，Apple Silicon 和 Intel 通用） |
 | [ocu](https://github.com/kadaliao/open-computer-use) | Formula | open-computer-use：让 AI agent 通过辅助功能树操作 macOS 应用，带命令行、MCP 服务和内置 agent（只有 Apple Silicon） |
 | [open-agent-docs](https://github.com/kadaliao/open-agent-docs) | Formula | 人和 AI Agent 一起写的文档服务器：Agent 经 MCP 读写页面、回评论，人在浏览器里编辑；`brew services start open-agent-docs` 当服务跑（macOS 11 起；Linux 要 glibc 2.34 起，即 Ubuntu 22.04+、Debian 12+、RHEL 9+；arm64 和 x86_64 都有） |
 | [open-super-agent](https://github.com/kadaliao/open-super-agent) | Cask | 可以自己部署的常驻 AI 队友，这里装的是 macOS 桌面 App（Apple Silicon 和 Intel 都有，macOS 12 起） |
 | [tizi-desktop](https://github.com/kadaliao/Tizi) | Cask | Tizi 的 macOS 桌面版，自带终端版（Apple Silicon 和 Intel 都有，macOS 13 起） |
-| [suck-my-disk](https://github.com/kadaliao/suck-my-disk) | Cask | SuckMyDisk：认得出项目、渲染帧、开发缓存、本地模型和应用的磁盘空间工具，告诉你哪些可以放心删（macOS 26 起，Apple Silicon 和 Intel 通用） |
+| [suck-my-disk](https://github.com/kadaliao/suck-my-disk) | Cask | SuckMyDisk：认得出项目、渲染帧、开发缓存、本地模型和应用的磁盘空间工具，告诉你哪些可以放心删，自带命令行 smd（macOS 26 起，Apple Silicon 和 Intel 通用） |
 | [kitfold](https://github.com/kadaliao/kitfold) | Cask | Kitfold：统一管理 Claude Code、Codex、Gemini CLI、Cursor 等 70 多个 Coding Agent 的 Skills 和指令文件，同时装好 `kitfold` 命令行（macOS 15 起，Apple Silicon 和 Intel 通用） |
 | [kaixinguo](https://github.com/kadaliao/kaixinguo) | Cask | 开心果：无广告的红果短剧 Mac 客户端，GPU 直接绘制，安装包约 10 MB（macOS 12 起，Apple Silicon 和 Intel 通用） |
 | [islander](https://github.com/kadaliao/islander) | Cask | 岛民：把菜单栏图标藏进刘海，鼠标移到刘海上时在灵动岛里显示（macOS 14 起，Apple Silicon 和 Intel 通用） |
