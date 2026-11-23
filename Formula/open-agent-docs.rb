@@ -11,23 +11,23 @@ class OpenAgentDocs < Formula
   # 发布页的压缩包里是一个目录，二进制在里面（网页已经打进二进制）。
   on_macos do
     on_arm do
-      url "https://github.com/kadaliao/open-agent-docs/releases/download/v0.3.2/open-agent-docs-v0.3.2-aarch64-apple-darwin.tar.gz"
-      sha256 "82f03681e47d6fdc08fd522e1be0cf19416676dd28523c3faf3b5afab7a360c8"
+      url "https://github.com/kadaliao/open-agent-docs/releases/download/v0.4.0/open-agent-docs-v0.4.0-aarch64-apple-darwin.tar.gz"
+      sha256 "58811275775a25affd47562b119b0ceccd67066a7caddc1e86cb12daf65eb6cf"
     end
     on_intel do
-      url "https://github.com/kadaliao/open-agent-docs/releases/download/v0.3.2/open-agent-docs-v0.3.2-x86_64-apple-darwin.tar.gz"
-      sha256 "1fb9093d833e264923704f3891a8fe026c9dfc1a10c57480e726e6c41a546252"
+      url "https://github.com/kadaliao/open-agent-docs/releases/download/v0.4.0/open-agent-docs-v0.4.0-x86_64-apple-darwin.tar.gz"
+      sha256 "cdbb988ef5eec7dc28128b4b237ede1b024ac8cf61ccfb0183aa2cc36c5faa2d"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/kadaliao/open-agent-docs/releases/download/v0.3.2/open-agent-docs-v0.3.2-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "6e3de407457d94c3019cc88e6be2d395c0f9c7b4446ab3e8c436fc1865f4f8f4"
+      url "https://github.com/kadaliao/open-agent-docs/releases/download/v0.4.0/open-agent-docs-v0.4.0-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "415c97604bd809802d1d65c6af97fe12bdc02a7bf6f500eab9b3c0e0b4ae3874"
     end
     on_intel do
-      url "https://github.com/kadaliao/open-agent-docs/releases/download/v0.3.2/open-agent-docs-v0.3.2-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "75d6538e1f7e78da6920565920a5e9fd2674e86978119d189580fafab0cf4a6b"
+      url "https://github.com/kadaliao/open-agent-docs/releases/download/v0.4.0/open-agent-docs-v0.4.0-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "83d0a9e00068f2fa1b5850746734aa2f21901b114720501574dbe77f62e776a9"
     end
   end
 
