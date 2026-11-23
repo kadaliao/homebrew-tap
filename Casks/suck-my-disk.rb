@@ -1,6 +1,6 @@
 cask "suck-my-disk" do
-  version "0.8.1"
-  sha256 "4df81e89b6c43918959512e0af74dab22e195f43d859695a4bedf3a02202e402"
+  version "0.9.0"
+  sha256 "8bd67a8654f062772b35b31a0d3c289c6870009bdf0736ccb1f5982109f13ede"
 
   url "https://github.com/kadaliao/suck-my-disk/releases/download/v#{version}/SuckMyDisk-#{version}.zip"
   name "SuckMyDisk"
