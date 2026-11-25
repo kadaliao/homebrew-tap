@@ -1,6 +1,6 @@
 cask "notchfax" do
-  version "0.3.1"
-  sha256 "a53b64a894c530994333b6320397df02868d1b746e7e10714e4636ef19828873"
+  version "0.4.0"
+  sha256 "5859c03ee16a45da03f49ec066843b12e2532f85fa6b454a1b76a823a81a7718"
 
   url "https://github.com/kadaliao/notchfax/releases/download/v#{version}/Notchfax-#{version}.dmg"
   name "Notchfax"
