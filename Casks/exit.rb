@@ -1,6 +1,6 @@
 cask "exit" do
-  version "0.1.0"
-  sha256 "7140d719b1d69f2ec53aae0ee7fbc3fc1b358326f0c5d0477aaacd22c576f1f0"
+  version "0.2.0"
+  sha256 "4e20d80e676eb5403532fbb9c05f791629fc66a86b3f26c17845bdbc5c303fd7"
 
   url "https://github.com/kadaliao/exit/releases/download/v#{version}/Exit-#{version}.dmg"
   name "Exit"
