@@ -4,7 +4,7 @@ cask "exit" do
 
   url "https://github.com/kadaliao/exit/releases/download/v#{version}/Exit-#{version}.dmg"
   name "Exit"
-  desc "窗口关闭、打开、最小化时在原地播放 GPU 动画，特效可以自己写或让 Claude 生成"
+  desc "窗口关闭、打开、最小化时在原地播放 GPU 动画，特效可以自己写或让 AI 生成"
   homepage "https://github.com/kadaliao/exit"
 
   livecheck do
@@ -12,6 +12,8 @@ cask "exit" do
     strategy :github_latest
   end
 
+  # 0.4.0 起应用每天自己检查 GitHub Releases 并更新，brew upgrade 默认跳过。
+  auto_updates true
   depends_on macos: :sonoma
 
   app "Exit.app"
