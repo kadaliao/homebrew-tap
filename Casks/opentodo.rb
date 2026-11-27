@@ -1,6 +1,6 @@
 cask "opentodo" do
-  version "0.1.0"
-  sha256 "93f9e9a559c9b33a63b4b5a4dac541a9de106ffae376cf551c4e3be8b3bcd9ff"
+  version "0.2.0"
+  sha256 "d6a3975987b5793c57ab1af493fd4b5c6786b02f735c36600cdc9828831b32c6"
 
   url "https://github.com/kadaliao/opentodo/releases/download/v#{version}/OpenTodo-#{version}.dmg"
   name "OpenTodo"
