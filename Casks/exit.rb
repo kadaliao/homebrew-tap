@@ -5,7 +5,7 @@ cask "exit" do
   url "https://github.com/kadaliao/exit/releases/download/v#{version}/Exit-#{version}.dmg"
   name "Exit"
   desc "窗口关闭、打开、最小化时在原地播放 GPU 动画，特效可以自己写或让 AI 生成"
-  homepage "https://github.com/kadaliao/exit"
+  homepage "https://kadaliao.github.io/exit/"
 
   livecheck do
     url :url
